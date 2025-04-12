@@ -1,0 +1,437 @@
+/* ProfilePage.css */
+.profile-page {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    padding-top: 80px; /* Account for navbar */
+  }
+  
+  /* Profile Header Styles */
+  .profile-header {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .profile-background {
+    height: 200px;
+    background-color: #b5c4cd;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+  }
+  
+  .profile-image-container {
+    position: absolute;
+    bottom: -70px;
+    left: 24px;
+  }
+  
+  .profile-image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .open-to-work-badge {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(15, 96, 37, 0.8);
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    font-size: 12px;
+    font-weight: bold;
+    transform: rotate(-15deg) translateY(15px);
+  }
+  
+  .camera-button {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .camera-button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  
+  .edit-profile-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .edit-profile-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Profile Info Styles */
+  .profile-info {
+    margin-top: 80px;
+    padding: 0 24px;
+  }
+  
+  .profile-name-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .profile-name-section h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .verification-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0077B5;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .profile-title {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .profile-location {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 4px;
+  }
+  
+  .contact-info {
+    color: #0077B5;
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 600;
+  }
+  
+  .profile-connections {
+    font-size: 14px;
+    color: #0077B5;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  /* Action Buttons */
+  .profile-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .primary-button {
+    background-color: #0077B5;
+    color: white;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .tertiary-button {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .primary-button:hover, .secondary-button:hover, .tertiary-button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Open to Work Section */
+  .open-to-work-section {
+    background-color: rgba(234, 242, 247, 0.5);
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .section-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .section-content p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .show-details {
+    font-size: 14px;
+    color: #0077B5;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .edit-section-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Education Section */
+  .education-section {
+    margin-bottom: 24px;
+  }
+  
+  .education-section h3 {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .education-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .institution-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .education-details {
+    flex: 1;
+  }
+  
+  .education-details h4 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .education-details p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .education-date {
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Skills Section */
+  .skills-section {
+    margin-bottom: 24px;
+  }
+  
+  .skills-section h3 {
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  .skill-item {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .skill-item h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .skill-item p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .show-more-button {
+    background: none;
+    border: none;
+    color: #0077B5;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 0;
+  }
+  
+  /* Hiring Alert */
+  .hiring-alert {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.16);
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .hiring-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .hiring-content p {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .get-started-button {
+    background: none;
+    border: none;
+    color: #0077B5;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    padding: 0;
+    font-weight: 300;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .profile-actions {
+      flex-direction: column;
+    }
+    
+    .profile-actions button {
+      width: 100%;
+    }
+    
+    .skill-items {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-image-wrapper {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .profile-info {
+      margin-top: 60px;
+    }
+  }
+  
+  /* Animation Effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .profile-page {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .profile-image-wrapper img {
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-image-wrapper:hover img {
+    transform: scale(1.05);
+  }
+  
+  .primary-button, .secondary-button, .tertiary-button {
+    transition: all 0.2s ease;
+  }
+  
+  .primary-button:hover, .secondary-button:hover, .tertiary-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .skill-item {
+    transition: all 0.2s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
